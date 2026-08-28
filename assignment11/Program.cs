@@ -52,8 +52,40 @@ namespace assignment11
             //foreach (Product p in clothingUnder100)
             //{
             //    Console.WriteLine($"Name: {p.Name}, Price: {p.Price}, Stock: {p.Stock}");
-          
+            // ==================================================================
+            //func == استخدمناها عشان بتاخد حاجه وترجع حاجه
             //}
+            #endregion
+            #region 3.1. Print Reports 
+            //Product.PrintReport(catalog, p => Console.WriteLine($"{p.Name} - ${p.Price}"));
+            //Console.WriteLine( "=============================");
+            //Product.PrintReport(catalog, p => Console.WriteLine($"[{p.Category}] {p.Name} | Price: ${p.Price} | Stock: {p.Stock}"));
+            //======================================================
+            //action==void بترجع حاجه من نوع     
+            #endregion
+            #region 3.2. Transform Products 
+            //List<string> summary = Product.TransformProducts(catalog, p => $"{p.Name} (${p.Price})");
+
+            //foreach (string item in summary)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //List<string> priceLabels = Product.TransformProducts(catalog, p => $"{p.Name}: {(p.Price > 100 ? "Expensive!" : "Affordable")}");
+
+            //foreach (string item in priceLabels)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+            #region 3.3. Filter Products
+            //List<Product> lowStock = Product.FilterProducts(catalog, p => p.Stock < 20);
+
+            //foreach (Product p in lowStock)
+            //{
+            //    Console.WriteLine($"[LOW STOCK] {p.Name}: only {p.Stock} left!");
+            //}
+          //  Predicate== bool بتستقبل براميتر وترجع حاجه من نوع 
             #endregion
 
         }
